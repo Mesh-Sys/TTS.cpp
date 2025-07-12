@@ -1,5 +1,5 @@
-torch>=2.4.0
-torchaudio>=2.4.0
+torch==2.4.0
+torchaudio==2.4.0
 torchvision==0.19.0
 gguf==0.10.0
 spacy==3.8.5
@@ -17,5 +17,6 @@ scipy>=1.15.2
 snac==1.2.1
 soundfile>=0.13.1
 parler_tts @ git+https://github.com/Mesh-Sys/parler-tts.git
+#nari-tts @ git+https://github.com/nari-labs/dia.git@2811af1c5f476b1f49f4744fabf56cf352be21e5
 nari-tts @ git+https://github.com/nari-labs/dia.git@2811af1c5f476b1f49f4744fabf56cf352be21e5
 #torchvision==0.21.0
