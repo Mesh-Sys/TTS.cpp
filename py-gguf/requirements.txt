@@ -18,4 +18,4 @@ snac==1.2.1
 soundfile>=0.13.1
 parler_tts @ git+https://github.com/Mesh-Sys/parler-tts.git
 nari-tts @ git+https://github.com/nari-labs/dia.git@2811af1c5f476b1f49f4744fabf56cf352be21e5
-torchvision==0.21.0
+#torchvision==0.21.0
