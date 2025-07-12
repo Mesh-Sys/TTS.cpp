@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import argparse
 from tts_encoders import DiaEncoder, DEFAULT_DIA_REPO_ID
 from os.path import isdir, dirname

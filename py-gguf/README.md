@@ -17,9 +17,9 @@ pip3 install -r requirements.txt
 
 ### Parler TTS
 
-The GGUF conversion script for Parler TTS can be run via the `convert_parler_tts_to_gguf` file locally like so: 
+The GGUF conversion script for Parler TTS can be run via the `convert_parler_tts_to_gguf.py` file locally like so: 
 ```commandline
-python3 ./convert_parler_tts_to_gguf --save-path ./parler-tts-large.gguf --voice-prompt "female voice" --large-model
+python3 convert_parler_tts_to_gguf.py --save-path ./parler-tts-large.gguf --voice-prompt "female voice" --large-model
 ```
 
 the command accepts _--save-path_ which described where to save the GGUF model file to, the flag _--large-model_ which when passed encodes [Parler-TTS-large](https://huggingface.co/parler-tts/parler-tts-large-v1) (rather than [mini](https://huggingface.co/parler-tts/parler-tts-mini-v1)), _--voice-prompt_ which is a sentence or statement that desribes how the model's voice should sound at generation time, and _--repo-id-override_ which override the huggingface repository to pull the model tensors from (this setting overrides the _--large-model_ argument). 
@@ -30,19 +30,19 @@ The Parler TTS model is trained to alter how it generates audio tokens via cross
 
 #### Conditional Voice Prompt
 
-If you would like to alter the voice prompt used to generate with parler TTS on the fly you will need to prepare the text encoder model, a T5-encoder model, in the gguf format. This can be accomplished by running `convert_t5_encoder_to_gguf` from this directory:
+If you would like to alter the voice prompt used to generate with parler TTS on the fly you will need to prepare the text encoder model, a T5-encoder model, in the gguf format. This can be accomplished by running `convert_t5_encoder_to_gguf.py` from this directory:
 
 ```commandline
-python3 ./convert_t5_encoder_to_gguf --save-path ./t5-encoder-large.gguf --large-model
+python3 convert_t5_encoder_to_gguf.py --save-path ./t5-encoder-large.gguf --large-model
 ```
 
 To use this model alongside the parler tts model see the [cli readme for information on conditional generation](../examples/cli/README.md).
 
 ### Kokoro
 
-The GGUF conversion script for Kokorocan be run via the `convert_kokoro_to_gguf` file locally like so: 
+The GGUF conversion script for Kokorocan be run via the `convert_kokoro_to_gguf.py` file locally like so: 
 ```commandline
-python3 ./convert_kokoro_to_gguf --save-path ./kokoro.gguf
+python3 convert_kokoro_to_gguf.py --save-path ./kokoro.gguf
 ```
 
 the command accepts _--save-path_ which described where to save the GGUF model file to, _--tts-phonemizer_ which when passed encodes the model to use TTS.cpp native phonemization (currently not recommended), and _--repo-id_ which describes the hugging face repo from which to download the model (defaults to 'hexgrad/Kokoro-82M'). Currently all standard Kokoro voices packs are encoded alongside the model (this is not currently customizable through the CLI).
