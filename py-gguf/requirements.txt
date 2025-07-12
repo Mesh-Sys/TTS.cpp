@@ -16,6 +16,5 @@ scipy>=1.15.2
 snac==1.2.1
 soundfile>=0.13.1
 #parler_tts @ git+https://github.com/huggingface/parler-tts.git@d108732cd57788ec86bc857d99a6cabd66663d68
-parler_tts @ git+https://github.com/huggingface/parler-tts.git
 nari-tts @ git+https://github.com/nari-labs/dia.git@2811af1c5f476b1f49f4744fabf56cf352be21e5
 torchvision==0.21.0
