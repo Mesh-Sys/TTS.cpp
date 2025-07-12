@@ -5,7 +5,6 @@ spacy==3.8.5
 kokoro==0.9.4
 huggingface-hub>=0.26.5
 transformers>=4.46.0
-parler_tts @ git+https://github.com/huggingface/parler-tts.git@d108732cd57788ec86bc857d99a6cabd66663d68
 gguf==0.10.0
 safetensors==0.5.3
 groovy==0.1.2
