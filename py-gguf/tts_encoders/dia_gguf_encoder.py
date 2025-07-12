@@ -7,8 +7,8 @@ from dia.state import EncoderInferenceState
 from dia.layers import DiaModel
 
 # The default repositories from which to pull the Dia torch model.
-#DEFAULT_DIA_REPO_ID = "nari-labs/Dia-1.6B"
-DEFAULT_DIA_REPO_ID = "nari-labs/Dia-1.6B-0626"
+DEFAULT_DIA_REPO_ID = "nari-labs/Dia-1.6B"
+#DEFAULT_DIA_REPO_ID = "nari-labs/Dia-1.6B-0626"
 
 # The architecture string used by TTS.cpp to assign the appropriate TTS Model and Runner.
 DIA_ARCHITECTURE = "dia"
